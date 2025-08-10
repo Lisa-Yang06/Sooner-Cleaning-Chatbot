@@ -38,7 +38,7 @@ def _load_index_and_meta():
 EMBED = "text-embedding-3-small"   # 和建库时一致
 CHAT  = "gpt-4o"              # 任选可用聊天模型名
 
-load_dotenv(dotenv_path="/Users/yuxuanyang/soonerbot/.env")
+load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
