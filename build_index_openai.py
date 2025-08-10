@@ -10,7 +10,7 @@ META= "data/index_meta.json"
 
 EMBED_MODEL = "text-embedding-3-small"  # 便宜速度快；追求效果可用 -large
 
-load_dotenv(dotenv_path="/Users/yuxuanyang/soonerbot/.env")
+load_dotenv()
 my_api_key = os.getenv("OPENAI_API_KEY")
 
 client = OpenAI(api_key = my_api_key)
