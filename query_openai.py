@@ -98,8 +98,8 @@ def answer(query: str, hits: list):
     return resp.choices[0].message.content
 
 if __name__ == "__main__":
-    q = "Spunlace Woodpulp & PP Material Dual Textured Woodpulp & PP CLeaning Material, is it man-made"
-    hits = retrieve(q, k=50)
+    q = "who can i contact"
+    hits = retrieve(q, k=10)
     print("Top hits:")
     for h in hits:
         print(f"{h['rank']:>2}  {h['score']:.3f}  {h['title']}  {h['url']}")
