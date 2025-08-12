@@ -1,4 +1,4 @@
-import app as st
+import streamlit as st
 from query_openai import retrieve, answer
 
 st.title("SoonerCleaning Chatbot")
