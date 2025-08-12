@@ -1,5 +1,5 @@
 import streamlit as st
-from query_openai.py import retrieve, answer
+from query_openai import retrieve, answer
 
 st.title("SoonerCleaning Chatbot")
 query = st.text_input("Ask your question:")
